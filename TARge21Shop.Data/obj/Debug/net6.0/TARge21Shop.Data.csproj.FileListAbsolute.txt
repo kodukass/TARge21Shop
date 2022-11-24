@@ -1,0 +1,17 @@
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Data.deps.json
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Data.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Data.pdb
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Core.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Core.pdb
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.csproj.AssemblyReference.cache
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.AssemblyInfoInputs.cache
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.AssemblyInfo.cs
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.csproj.CoreCompileInputs.cache
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.csproj.CopyComplete
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\refint\TARge21Shop.Data.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.pdb
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\ref\TARge21Shop.Data.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\bin\Debug\net6.0\TARge21Shop.Data.runtimeconfig.json
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Data\obj\Debug\net6.0\TARge21Shop.Data.genruntimeconfig.cache
