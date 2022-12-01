@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<TARge21Shop.Models.Spaceship.SpaceshipIndexViewModel>
 
+@{
+	int rowNumber = 1;
+}
 <div class="h1">
 	Products
 </div>
@@ -16,7 +19,7 @@
 				<th scope="col">Name</th>
 				<th scope="col">Type</th>
 				<th scope="col">Passengers</th>
-				<th scope ="col">Engine Power</th>
+				<th scope="col">Engine Power</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -24,7 +27,7 @@
 			@foreach(var spaceship in Model)
 			{
 				<tr>
-					<td>@spaceship.Id</td>
+					<td>@rowNumber</td>
 					<td>@spaceship.Name</td>
 					<td>@spaceship.Type</td>
 					<td>@spaceship.Passangers</td>
@@ -33,9 +36,10 @@
 						<td>
                         <a asp-action="edit" asp-controller="spaceship" asp-route-id="@spaceship.Id" class="btn btn-primary">Edit</a>
                         <input asp-action="delete" asp-controller="spaceship" asp-route-id="@spaceship.Id" type="submit" class="btn btn-danger" value="Delete">
-                    </td>
+						</td>
 					</td>
 				</tr>
+				rowNumber += 1;
 			}
 		</tbody>
 	</table>

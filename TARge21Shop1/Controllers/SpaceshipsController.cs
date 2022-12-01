@@ -14,7 +14,6 @@ namespace TARge21Shop.Controllers
             )
         {
         _context = context;
-        //int rownumber = SpaceshipIndexViewModel();
         }
 
         public IActionResult Index()
@@ -30,6 +29,12 @@ namespace TARge21Shop.Controllers
                     EnginePower = x.EnginePower
                 });
             return View();
+        }
+
+        public IActionResult Add()
+        {
+
+            return View("Edit");
         }
     }
 }
