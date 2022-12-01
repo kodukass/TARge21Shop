@@ -1,8 +1,0 @@
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.csproj.AssemblyReference.cache
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.AssemblyInfoInputs.cache
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.AssemblyInfo.cs
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.csproj.CoreCompileInputs.cache
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.RazorAssemblyInfo.cache
-C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop1\obj\Debug\net6.0\TARge21Shop1.RazorAssemblyInfo.cs
