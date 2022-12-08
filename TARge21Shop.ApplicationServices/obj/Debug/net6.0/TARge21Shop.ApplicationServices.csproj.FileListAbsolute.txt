@@ -10,3 +10,8 @@ C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.Ap
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\obj\Debug\net6.0\refint\TARge21Shop.ApplicationServices.dll
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\obj\Debug\net6.0\TARge21Shop.ApplicationServices.pdb
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\obj\Debug\net6.0\ref\TARge21Shop.ApplicationServices.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\bin\Debug\net6.0\TARge21Shop.Core.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\bin\Debug\net6.0\TARge21Shop.Data.dll
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\bin\Debug\net6.0\TARge21Shop.Data.pdb
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\bin\Debug\net6.0\TARge21Shop.Core.pdb
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\TARge21Shop\TARge21Shop\TARge21Shop.ApplicationServices\obj\Debug\net6.0\TARge21Shop.ApplicationServices.csproj.CopyComplete
