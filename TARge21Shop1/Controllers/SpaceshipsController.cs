@@ -138,7 +138,7 @@ namespace TARge21Shop.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> DeleteConfirmation(Guid id)
         {
             var spaceshipId = await _spaceshipsServices.Delete(id);
             if (spaceshipId == null)
@@ -147,10 +147,10 @@ namespace TARge21Shop.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Details(Guid id)
         {
-            var spaceship = await _spaceshipsServices.;
+            var spaceship = await _spaceshipsServices.GetAsync(id);
 
             if (spaceship == null)
             {
@@ -174,7 +174,37 @@ namespace TARge21Shop.Controllers
                 CreatedAt = spaceship.CreatedAt,
                 ModifiedAt = spaceship.ModifiedAt
             };
-            return View();
+            return View(vm);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var spaceship = await _spaceshipsServices.GetAsync(id);
+
+            if (spaceship == null)
+            {
+                return NotFound();
+            }
+
+            var vm = new SpaceshipDeleteViewModel()
+            {
+                Id = spaceship.Id,
+                Name = spaceship.Name,
+                Type = spaceship.Type,
+                Crew = spaceship.Crew,
+                Passangers = spaceship.Passangers,
+                CargoWeight = spaceship.CargoWeight,
+                FullTripsCount = spaceship.FullTripsCount,
+                MaintenanceCount = spaceship.MaintenanceCount,
+                LastMaintenance = spaceship.LastMaintenance,
+                EnginePower = spaceship.EnginePower,
+                MaidenLaunch = spaceship.MaidenLaunch,
+                BuiltDate = spaceship.BuiltDate,
+                CreatedAt = spaceship.CreatedAt,
+                ModifiedAt = spaceship.ModifiedAt
+            };
+            return View(vm);
         }
     }
 }
