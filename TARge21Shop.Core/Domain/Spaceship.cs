@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TARge21Shop.Core.Domain.Spaceship
+namespace TARge21Shop.Core.Domain
 {
     public class Spaceship
     {
@@ -22,7 +22,8 @@ namespace TARge21Shop.Core.Domain.Spaceship
         public int EnginePower { get; set; }
         public DateTime MaidenLaunch { get; set; }
         public DateTime BuiltDate { get; set; }
-        //database
+
+        //only database
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
     }
