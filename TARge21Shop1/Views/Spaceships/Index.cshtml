@@ -8,7 +8,7 @@
 </div>
 
 <div>
-	<a asp-action="add" asp-controller="spaceships" type="submit" class="btn">Add</a>
+	<a asp-action="create" asp-controller="spaceships" type="submit" class="btn">Create</a>
 </div>
 
 <form method="post">
@@ -31,12 +31,12 @@
 					<td>@spaceship.Name</td>
 					<td>@spaceship.Type</td>
 					<td>@spaceship.Passangers</td>
-					<td>@spaceship.Engine Power</td>
+					<td>@spaceship.EnginePower</td>
 					<td>
 						<td>
 						<a asp-action="details" asp-controller="spaceships" asp-route-id="@spaceship.Id" class="btn btn-info">Details</a>
-                        <a asp-action="edit" asp-controller="spaceships" asp-route-id="@spaceship.Id" class="btn btn-primary">Edit</a>
-                        <a asp-action="delete" asp-controller="spaceship" asp-route-id="@spaceship.Id" type="submit" class="btn btn-danger">Delete</a>
+                        <a asp-action="update" asp-controller="spaceships" asp-route-id="@spaceship.Id" class="btn btn-primary">Update</a>
+                        <a asp-action="delete" asp-controller="spaceship" asp-route-id="@spaceship.Id" class="btn btn-danger">Delete</a>
 						</td>
 					</td>
 				</tr>

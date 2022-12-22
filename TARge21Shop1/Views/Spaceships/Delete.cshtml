@@ -4,7 +4,7 @@
 
 <div>
 
-	<h4>Spaceships</h4>
+	<h4>Spaceship</h4>
 	<hr />
 	<dl class="row">
 
@@ -77,9 +77,13 @@
 			<label asp-for="ModifiedAt" class="col-sm-2 col-form-label"></label>
 			@Html.DisplayFor(model => model.ModifiedAt)
 		</div>
-	</dl>
-	<form asp-action="DeleteConfirmation">
-		<input type="hidden" asp-for="Id" />
-		<input type="submit" value="Delete" class="btn btn-danger" />
-	</form>
+	</dl>	
+
 </div>
+<hr />
+<form asp-action="DeleteConfirmation">
+	<input type="hidden" asp-for="Id" />
+	<input type="submit" value="Delete" class="btn btn-danger" />
+	<a asp-action="index" asp-controller="spaceships" class="btn btn-primary">Back</a>
+</form>
+

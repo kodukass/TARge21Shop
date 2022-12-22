@@ -4,7 +4,7 @@ using TARge21Shop.Core.Dto;
 using TARge21Shop.Core.ServiceInterface;
 using TARge21Shop.Data;
 using TARge21Shop.Models.Spaceship;
-using TARge21Shop1.Models.Spaceship;
+
 
 namespace TARge21Shop.Controllers
 {
@@ -35,19 +35,19 @@ namespace TARge21Shop.Controllers
                     Passangers = x.Passangers,
                     EnginePower = x.EnginePower
                 });
-            return View();
+            return View(result);
         }
 
         [HttpGet]
-        public IActionResult Add()
+        public IActionResult Create()
         {
-            SpaceshipEditViewModel spaceship = new SpaceshipEditViewModel();
+            SpaceshipCreateUpdateViewModel spaceship = new SpaceshipCreateUpdateViewModel();
 
-            return View("Edit", spaceship);
+            return View("CreateUpdate", spaceship);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(SpaceshipEditViewModel vm)
+        public async Task<IActionResult> Create(SpaceshipCreateUpdateViewModel vm)
         {
             var dto = new SpaceshipDto()
             {
@@ -67,7 +67,7 @@ namespace TARge21Shop.Controllers
                 ModifiedAt = vm.ModifiedAt
             };
 
-            var result = await _spaceshipsServices.Add(dto);
+            var result = await _spaceshipsServices.Create(dto);
 
             if (result == null)
             {
@@ -78,16 +78,16 @@ namespace TARge21Shop.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(Guid id)
+        public async Task<IActionResult> Update(Guid id)
         {
-            var spaceship = await _spaceshipsServices.GetUpdate(id);
+            var spaceship = await _spaceshipsServices.GetAsync(id);
 
             if (spaceship == null)
             {
                 return NotFound();
             }
 
-            var dto = new SpaceshipEditViewModel()
+            var vm = new SpaceshipCreateUpdateViewModel()
             {
                 Id = spaceship.Id,
                 Name = spaceship.Name,
@@ -104,11 +104,11 @@ namespace TARge21Shop.Controllers
                 CreatedAt = spaceship.CreatedAt,
                 ModifiedAt = spaceship.ModifiedAt
             };
-            return View();
+            return View("CreateUpdate", vm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(SpaceshipEditViewModel vm)
+        public async Task<IActionResult> Update(SpaceshipCreateUpdateViewModel vm)
         {
             var dto = new SpaceshipDto()
             {
@@ -137,16 +137,7 @@ namespace TARge21Shop.Controllers
             return RedirectToAction(nameof(Index), vm);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> DeleteConfirmation(Guid id)
-        {
-            var spaceshipId = await _spaceshipsServices.Delete(id);
-            if (spaceshipId == null)
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            return RedirectToAction(nameof(Index));
-        }
+        
         [HttpPost]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -205,6 +196,17 @@ namespace TARge21Shop.Controllers
                 ModifiedAt = spaceship.ModifiedAt
             };
             return View(vm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmation(Guid id)
+        {
+            var spaceshipId = await _spaceshipsServices.Delete(id);
+            if (spaceshipId == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }
