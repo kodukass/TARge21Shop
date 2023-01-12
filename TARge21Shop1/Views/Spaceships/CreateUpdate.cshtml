@@ -112,7 +112,19 @@ else
 				<input asp-for="ModifiedAt" class="form-control" />
 			</div>
 		</div>
-		<hr/>
+
+			<hr />
+
+		<div class="form-group row">
+			<label asp-for="Files" class="col-sm-2 col-form-label"></label>
+			<div class="col-sm-5">
+				<div class="custom-file">
+					<input class="form-control custom-file-input" asp-for="Files" multible type="file"/>
+					<label class="custom-file-lable">Choose File...</label>
+				</div>
+			</div>
+		</div>
+
 		@foreach (var images in Model.Image)
 		{
 			<partial name="_Images" model="images"/>
@@ -134,3 +146,23 @@ else
 
 	</form>
 </div>
+
+@section Scripts
+{
+	<script>
+		$(document).ready(function() {
+			$('.custom-file-input').on("change", function() {
+				var fileLabel = $(this).next('.custom-file-label');
+				var files = $(this)[0].files;
+				if(files.length > 1)
+				{
+					fileLabel.html(files.Length + ' files selected');
+				}
+				else if(files.Length == 1)
+				{
+					fileLabel.html(files[0].name);
+				}
+			});
+		});
+	</script>
+}
