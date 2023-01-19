@@ -10,7 +10,7 @@ namespace TARge21Shop.Core.ServiceInterface
 {
 	public interface IFilesServices 
 	{
-        byte[] UploadFilesToDatabase(SpaceshipDto dto, Spaceship domain);
-
+        void UploadFilesToDatabase(SpaceshipDto dto, Spaceship domain);
+        Task<FileToDatabase> RemoveImage(FileToDatabaseDto dto);
     }
 }

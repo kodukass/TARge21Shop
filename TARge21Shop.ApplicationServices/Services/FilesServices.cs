@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,7 @@ namespace TARge21Shop.ApplicationServices.Services
 			_context = context;
 		}
 
-		public byte[] UploadFilesToDatabase(SpaceshipDto dto, Spaceship domain)
+		public void UploadFilesToDatabase(SpaceshipDto dto, Spaceship domain)
 		{
 			if (dto.Files != null && dto.Files.Count > 0)
 			{
@@ -43,7 +44,18 @@ namespace TARge21Shop.ApplicationServices.Services
 					}
 				}
 			}
-			return null;
+			//return null;
 		}
-	}
+        public async Task<FileToDatabase> RemoveImage(FileToDatabaseDto dto)
+        {
+            var image = await _context.FileToDatabases
+                .Where(x => x.Id == dto.Id)
+                .FirstOrDefaultAsync();
+
+            _context.FileToDatabases.Remove(image);
+            await _context.SaveChangesAsync();
+
+            return image;
+        }
+    }
 }

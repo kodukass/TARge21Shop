@@ -49,7 +49,7 @@ namespace TARge21Shop.ApplicationServices.Services
 
             if(dto.Files != null)
             {
-                file.ImageData = _files.UploadFilesToDatabase(dto, spaceship);
+                _files.UploadFilesToDatabase(dto, spaceship);
             }
 
             await _context.Spaceships.AddAsync(spaceship);
@@ -77,6 +77,11 @@ namespace TARge21Shop.ApplicationServices.Services
                 ModifiedAt = DateTime.Now
             };
 
+            if (dto.Files != null)
+            {
+                _files.UploadFilesToDatabase(dto, domain);
+            }
+
             _context.Spaceships.Update(domain);
             await _context.SaveChangesAsync();
 
@@ -99,7 +104,5 @@ namespace TARge21Shop.ApplicationServices.Services
 
             return result;
         }
-
-
     }
 }
