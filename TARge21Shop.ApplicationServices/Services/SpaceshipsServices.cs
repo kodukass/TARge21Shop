@@ -94,12 +94,12 @@ namespace TARge21Shop.ApplicationServices.Services
 
             var images = await _context.FileToDatabases
                 .Where(x => x.SpaceshipId == id)
-                .Select(y => new FileToDatabaseDto
-                {
-                    Id = y.Id,
-                    ImageTitle = y.ImageTitle,
-                    SpaceshipId = y.SpaceshipId,
-                })
+                //.Select(y => new FileToDatabaseDto
+                //{
+                //    Id = y.Id,
+                //    ImageTitle = y.ImageTitle,
+                //    SpaceshipId = y.SpaceshipId,
+                //})
                 .ToArrayAsync();
 
             await _files.RemoveImagesFromDatabase(images);
